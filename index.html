@@ -20,9 +20,9 @@
       background-color: #000;
       color: white;
       display: flex;
-      flex-direction: column; /* Vertically arrange content */
-      height: 100vh; /* Full height */
-      overflow: hidden; /* Prevent overflow */
+      flex-direction: column; /* Vertikális elrendezés */
+      height: 100vh; /* Teljes magasság */
+      overflow: hidden; /* Overfolyás megakadályozása */
     }
 
     .sidebar {
@@ -31,7 +31,7 @@
       left: 0;
       height: 100%;
       width: 60px;
-      background-color: #111;
+      background-color: rgba(17, 17, 17, 0); /* Teljesen áttetsző háttér */
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -67,25 +67,27 @@
     }
 
     .sidebar-image {
-      width: 40px; /* Adjust size as needed */
-      height: auto; /* Maintain aspect ratio */
-      position: absolute; /* Position the image absolutely */
-      top: 5px; /* Distance from the top */
-      right: 10px; /* Distance from the right */
-      z-index: 1001; /* Ensure it is above other elements */
+      width: 40px; /* Méret beállítása */
+      height: auto; /* Arány megtartása */
+      position: absolute; /* Kép abszolút pozicionálása */
+      top: 5px; /* Távolság a tetejétől */
+      right: 10px; /* Távolság a jobbtól */
+      z-index: 1001; /* Biztosítsd, hogy más elemek felett legyen */
     }
 
     .vertical-text {
-  position: fixed;
-  left: 10px; /* Distance from the left edge */
-  top: 4px; /* Distance from the top edge */
-  color: cyan;
-  font-size: 18px; /* Adjust the font size as needed */
-  background-color: #000; /* Black background */
-  padding: 12px; /* Add some padding */
-  z-index: 1000; /* Ensure it's above other elements */
-  white-space: nowrap; /* Prevent text wrapping */
-}
+      position: fixed;
+      left: 0; /* A bal élhez igazítás */
+      top: 0; /* A tetejéhez igazítás */
+      color: cyan;
+      font-size: 18px; /* Betűméret beállítása */
+      background-color: #000; /* Fekete háttér */
+      padding: 12px; /* Párnázás hozzáadása */
+      z-index: 1000; /* Biztosítsd, hogy más elemek felett legyen */
+      white-space: nowrap; /* Szöveg összetömörítése */
+      width: 100%; /* Teljes szélesség */
+      text-align: left; /* Szöveg balra igazítása */
+    }
   </style>
 </head>
 <body>
